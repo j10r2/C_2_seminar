@@ -4,7 +4,8 @@ while (true)
     try
         {
             int a = int.Parse(Console.ReadLine());
-            if (Math.Abs(a) >= 100)
+            a = Math.Abs(a);
+            if (a >= 100)
                 {   
                     if (a > 999)
                         {
@@ -20,7 +21,7 @@ while (true)
                 }
             else
                 {
-                Console.WriteLine("в числе меньше трёх цифр");
+                Console.WriteLine("третьей цифры нет");
                 }
         break;
         }
